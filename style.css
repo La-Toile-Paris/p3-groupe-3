@@ -12,6 +12,15 @@ body{
   flex-direction: column;
 }
 
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #32325D;
+  height: 100px;
+  padding: 32px 32px;
+}
+
 h1{
   display: flex;
   justify-content: center;
@@ -26,15 +35,102 @@ h4{
   margin: 0;
 }
 
-/* HERO_HEADER */
-#hero_header{
-  height: 100%;
-  width: 100%;
+/* POLICE */
+
+.H1_HaloMind{
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Montserrat';
 }
 
-.image{
-  height: 100%;
+.H2_HaloMind{
+  font-size: 20px;
+  font-weight: lighter;
+  font-family: 'Montserrat';
+}
+
+/* COLOR */
+.white{
+  color: white;
+}
+
+.AUTRE_1_FONCE{
+  color: #B97BFC;
+}
+
+.AUTRE_1_CLAIRE{
+  color: #E8A1FD;
+}
+
+/* FOND RADIAL */
+
+.radial {
+  background: 
+      url('../img/Rectangle 4169.png'),
+      radial-gradient(circle, 
+          rgb(232, 161, 253) 6%,   /* #E8A1FD à 100% */
+          rgb(232, 161, 253) 6%,   /* #E8A1FD à 100% */
+          rgb(141, 160, 248) 32%,  /* #8DA0F8 à 100% */
+          rgb(95, 123, 246) 56%,   /* #5F7BF6 à 100% */
+          rgb(81, 109, 232) 71%,   /* #516DE8 à 100% */
+          rgb(60, 60, 150) 87%,    /* #3C3C96 à 100% */
+          rgb(50, 50, 93) 100%     /* #32325D à 100% */
+      );
+  background-blend-mode: multiply; 
+  background-size: cover;
+  background-position: center;
+}
+
+/* HEADER */
+header a{
+  color: white;
+  text-decoration: none;
+}
+
+header .text_1_header{
+  display: flex;
+  gap: 24px;
+}
+
+/* HERO_HEADER */
+
+#hero_header {
   width: 100%;
+  min-height: 1024px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero_header{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 300px;
+}
+
+/* CONTEXTE */
+
+#contexte{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+}
+
+.text_1_context{
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Montserrat';
+}
+
+.text_2_context{
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Montserrat';
 }
 
 /* TEMOIGNAGES */
