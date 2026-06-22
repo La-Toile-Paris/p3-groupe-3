@@ -35,37 +35,6 @@ h4{
   margin: 0;
 }
 
-/* POLICE */
-
-.montserrat{
-  font-family: 'Montserrat';
-}
-
-.H1_HaloMind{
-  font-size: 24px;
-  font-weight: bold;
-  font-family: 'Montserrat';
-}
-
-.H2_HaloMind{
-  font-size: 20px;
-  font-weight: lighter;
-  font-family: 'Montserrat';
-}
-
-/* COLOR */
-.white{
-  color: white;
-}
-
-.AUTRE_1_FONCE{
-  color: #B97BFC;
-}
-
-.AUTRE_1_CLAIRE{
-  color: #E8A1FD;
-}
-
 /* FOND RADIAL */
 
 .radial {
@@ -99,19 +68,27 @@ header .text_1_header{
 /* HERO_HEADER */
 
 #hero_header {
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#hero_header{
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
   padding-bottom: 300px;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+}
+
+.text_1_hero_header{
+  font-size: 20px;
+  font-weight: lighter;
+  font-family: 'Montserrat';
+}
+
+.text_2_hero_header{
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Montserrat';
+  color: white;
 }
 
 /* CONTEXTE */
@@ -129,12 +106,21 @@ header .text_1_header{
   font-size: 20px;
   font-weight: bold;
   font-family: 'Montserrat';
+  color: #B97BFC;
 }
 
 .text_2_context{
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Montserrat';
+  color: #E8A1FD;
+}
+
+.text_3_context{
   font-size: 20px;
   font-weight: bold;
   font-family: 'Montserrat';
+  color: #B97BFC
 }
 
 /* FONCTIONNALITE */
@@ -148,16 +134,17 @@ header .text_1_header{
   height: 400px;
 }
 
-#questionnaire{
+#fonctionnalite{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   height: 100vh;
 }
 
-#questionnaire h1{
+.h1_fonctionnalite{
   justify-content: center;
   align-items: center;
+  font-family: 'Montserrat';
 }
 
 #activites-bien_etre{
@@ -184,12 +171,16 @@ header .text_1_header{
 /* TEMOIGNAGES */
 
 #temoignages{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   height: 100vh;
 }
 
-.image_temoignages{
-  height: 150px;
-  width: 150px;
+#articles_temoignages{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
 }
 
 .article_temoignages{
@@ -201,5 +192,30 @@ header .text_1_header{
   height: 400px;
   width: 250px;
   border-radius: 30px;
-  background-color: white;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 3px solid rgb(255, 255, 255, 0.3);
+}
+
+.image_temoignages{
+  height: 150px;
+  width: 150px;
+}
+
+.texte_1_temoignages{
+  color: #B97BFC;
+  font-weight:bold;
+  font-family: 'Montserrat';
+}
+
+.texte_2_temoignages{
+  color: #32325D;
+  font-family: 'Montserrat';
+  font-weight:bold;
+}
+
+.texte_3_temoignages{
+  color: #32325D;
+  font-family: 'Montserrat';
+  /* font-weight: lighter; */
 }
