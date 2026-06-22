@@ -1,4 +1,4 @@
-/* général */
+/* GENERAL */
 
 html {
   height: 100%;
@@ -96,7 +96,7 @@ header .text_1_header{
 
 #hero_header {
   width: 100%;
-  min-height: 1024px;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -122,25 +122,26 @@ header .text_1_header{
 }
 
 .text_1_context{
-  font-size: 20px;
+  font-size: 48px;
   font-weight: bold;
   font-family: 'Montserrat';
 }
 
 .text_2_context{
-  font-size: 20px;
+  font-size: 42px;
   font-weight: bold;
   font-family: 'Montserrat';
 }
 
+/* FONCTIONNALITE */
+
+
+
 /* TEMOIGNAGES */
 
 #temoignages{
-  background: black;
   height: 100vh;
 }
-
-/* titre-sousTitre" */
 
 #titre-sousTitre{
   display: flex;
@@ -155,8 +156,6 @@ header .text_1_header{
   height: 100vh;
 }
 
-/* photos */
-
 .photos{
   display: flex;
   justify-content: center;
@@ -166,10 +165,8 @@ header .text_1_header{
 }
 
 .image_temoignages{
-  height: 200px;
+  height: 400px;
 }
-
-/* liste */
 
 .liste{
   display: flex;
