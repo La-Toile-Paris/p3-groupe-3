@@ -37,6 +37,10 @@ h4{
 
 /* POLICE */
 
+.montserrat{
+  font-family: 'Montserrat';
+}
+
 .H1_HaloMind{
   font-size: 24px;
   font-weight: bold;
@@ -122,20 +126,60 @@ header .text_1_header{
 }
 
 .text_1_context{
-  font-size: 48px;
+  font-size: 20px;
   font-weight: bold;
   font-family: 'Montserrat';
 }
 
 .text_2_context{
-  font-size: 42px;
+  font-size: 20px;
   font-weight: bold;
   font-family: 'Montserrat';
 }
 
 /* FONCTIONNALITE */
 
+#fonctionnalité{
+  display: flex;
+  flex-direction: column;
+}
 
+.img_temoignages{
+  height: 400px;
+}
+
+#questionnaire{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100vh;
+}
+
+#questionnaire h1{
+  justify-content: center;
+  align-items: center;
+}
+
+#activites-bien_etre{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#interaction{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#educatif{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
 /* TEMOIGNAGES */
 
@@ -165,7 +209,7 @@ header .text_1_header{
 }
 
 .image_temoignages{
-  height: 400px;
+  height: 200px;
 }
 
 .liste{
