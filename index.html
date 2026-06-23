@@ -5,96 +5,177 @@
         <meta name="viewport" content="width=device-width" />
         <title>Landing Page</title>
         <link rel="stylesheet" href="style.css">
-        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-        <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
+        <link rel="stylesheet" href="index.css">
   </head>
     <body>
         <header>
-            <img src="img/logoHaloMind.png" alt="logoHaloMind">
-            <div class="text_1_header">
-                <a href="doc.html">Documentation</a>
-                <a href="#">TÉLÉCHARGER</a>
-            </div>
+            <nav class="navbar">
+                <a class="navbar__brand" href="index.html">
+                    <span class="circle"></span>
+                    <span class="navbar__name">HaloMind</span>
+                </a>
+                <div class="navbar__links">
+                    <a href="doc.html">Documentation</a>
+                    <a href="https://www.figma.com/proto/wf31OGe4L5dS1TVWhRtkSv/Application-Groupe-3?node-id=7284-3832&viewport=946%2C283%2C0.15&t=S5KwPIoOru4DIEJY-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=7284%3A3832&show-proto-sidebar=1&page-id=1%3A3">Télécharger</a>
+                </div>
+            </nav>
         </header>
 
         <section id="hero_header" class="radial">
+            <div class="hero__stage">
+                <span class="hero__halo"></span>
+                <img class="hero__asset" src="img/header/hero.png" alt="Aperçu de l'application HaloMind">
+            </div>
             <p class="text_1_hero_header">Pose l'écran</p>
             <p class="text_2_hero_header">Éclaire ton esprit</p>
         </section>
 
         <section id="contexte">
-            <p class="text_1_context">CONTEXTE</p>
-            <p class="text_2_context">Pourquoi cette app ?</p>
-            <p class="text_3_context">Afin d’aider sur la SANTÉ MENTAL par<br>rapport aux problèmes d’ADDICTIONS des<br>RÉSEAUX de nos JEUNES et JEUNES<br>ADULTES via des habitudes numériques<br>offert par nos fonctionnalité FONCTIONNALITÉ</p>
+            <div class="context__grid">
+                <figure class="context__visual context__visual--lg">
+                    <img src="img/landing_page/3.fonctionnalites/context1.png" alt="Personne absorbée par son écran">
+                </figure>
+                <div class="context__text">
+                    <p class="context__lead">Notre mission est simple : <strong>t'aider à reprendre le contrôle de ton temps en réduisant progressivement ta dépendance aux écrans.</strong></p>
+                    <p class="context__body">On t'accompagne vers une vie plus ancrée dans le réel, là où les vraies expériences et les vrais moments se passent.</p>
+                </div>
+                <figure class="context__visual context__visual--md">
+                    <img src="img/landing_page/3.fonctionnalites/context1.png" alt="">
+                </figure>
+                <figure class="context__visual context__visual--sm">
+                    <img src="img/landing_page/3.fonctionnalites/context1.png" alt="">
+                </figure>
+            </div>
+            
         </section>
 
         <section id="fonctionnalité">
-            <article id="fonctionnalite" class="radial">
-                <h1 class="h1_fonctionnalite">FONCTIONNALITÉ</h1>
-                <img class="img_temoignages" src="img/landing_page/3.fonctionnalites/questionnaire.png" alt="questionnaire.png">
+            <div class="features-intro radial">
+                <p class="features-tagline">LAISSEZ-VOUS TRAVERSER PAR L'EXPÉRIENCE</p>
+                <article class="feature feature--text-left">
+                    <div class="feature__text-wrap">
+                        <span class="feature__halo"></span>
+                        <div class="feature__text">
+                            <h3 class="feature__title">Diagnostic</h3>
+                            <p class="feature__subtitle">Connais-toi avant de te corriger</p>
+                            <p class="feature__desc">En quelques questions, l'app dresse ton profil de dépendance numérique et adapte chaque alerte à tes vraies habitudes.</p>
+                        </div>
+                    </div>
+                    <div class="feature__visual">
+                        <img src="img/landing_page/3.fonctionnalites/Fonction1.png" alt="Écrans de diagnostic">
+                    </div>
+                </article>
+            </div>
+
+            <article class="feature feature--text-right feature--dark">
+                <div class="feature__text-wrap">
+                    <span class="feature__halo"></span>
+                    <div class="feature__text">
+                        <h3 class="feature__title">Évolution</h3>
+                        <p class="feature__desc">Suivez votre avancée par rapport à vos objectifs et célébrez chaque progrès, jour après jour.</p>
+                    </div>
+                </div>
+                <div class="feature__visual">
+                    <img src="img/landing_page/3.fonctionnalites/Fonction2.png" alt="Écrans de suivi d'évolution">
+                </div>
             </article>
-            <article id="activites-bien_etre">
-                <img class="img_temoignages" src="img/landing_page/3.fonctionnalites/activites-bien_etre.png" alt="activites-bien_etre.png">
+
+            <article class="feature feature--text-left radial">
+                <div class="feature__text-wrap">
+                    <span class="feature__halo"></span>
+                    <div class="feature__text">
+                        <h3 class="feature__title">Alertes en temps réel</h3>
+                        <p class="feature__subtitle">On te coupe avant que tu t'y perdes !</p>
+                        <p class="feature__desc">Dès que tu passes trop de temps sur un réseau, un message s'affiche pour te rappeler que la vraie vie t'attend ailleurs.</p>
+                    </div>
+                </div>
+                <div class="feature__visual">
+                    <img src="img/landing_page/3.fonctionnalites/Fonction3.png" alt="Écrans d'alertes">
+                </div>
             </article>
-            <article id="interaction" class="radial">
-                <img class="img_temoignages" src="img/landing_page/3.fonctionnalites/interaction.png" alt="interaction.png">
-            </article>
-            <article id="educatif">
-                <img class="img_temoignages" src="img/landing_page/3.fonctionnalites/educatif.png" alt="educatif.png">
+
+            <article class="feature feature--text-right feature--dark">
+                <div class="feature__text-wrap">
+                    <span class="feature__halo"></span>
+                    <div class="feature__text">
+                        <h3 class="feature__title">Bien-être</h3>
+                        <p class="feature__desc">Des activités et des défis bienveillants pour remplacer le scroll par du concret et t'ancrer dans le réel.</p>
+                    </div>
+                </div>
+                <div class="feature__visual">
+                    <img src="img/landing_page/3.fonctionnalites/Fonction4.png" alt="Écrans bien-être">
+                </div>
             </article>
         </section>
 
         <section id="temoignages" class="radial">
-            <h1>TÉMOIGNAGES</h1>
-                <div id="articles_temoignages">
-                    <article class="article_temoignages">
-                        <img class="image_temoignages" src="img/landing_page/4.temoignages/Amandine.png" alt="Amandine.png">
-                        <div class="text_temoignages">
-                            <p class="texte_1_temoignages">Amandine, 16 ans</p>
-                            <p class="texte_2_temoignages">Etudiante</p>
-                            <p class="texte_3_temoignages">“Je passais mes nuits sur TikTok et Snap. Avec les défis de l'appli, je lâche enfin mon tel à 21h30. Je dors trop bien et je revis !”</p>
-                        </div>
-                    </article>
-                    <article class="article_temoignages">
-                        <img class="image_temoignages" src="img/landing_page/4.temoignages/Lucas.png" alt="Amandine.png">
-                        <div class="text_temoignages">
-                            <p class="texte_1_temoignages">Lucas, 24 ans</p>
-                            <p class="texte_2_temoignages">Sans activité</p>
-                            <p class="texte_3_temoignages">“Je scrollais sur Insta et TikTok toute la journée jusqu'à faire des nuits blanches. L'appli m'a mis un gros stop pour reprendre un rythme sain.”</p>
-                        </div>
-                    </article>
-                    <article class="article_temoignages">
-                        <img class="image_temoignages" src="img/landing_page/4.temoignages/Ines.png" alt="Amandine.png">
-                        <div class="text_temoignages">
-                            <p class="texte_1_temoignages">Ines, 30 ans</p>
-                            <p class="texte_2_temoignages">Salarié</p>
-                            <p class="texte_3_temoignages">“Ouvrir Instagram en bossant était un réflexe qui me stressait trop. La fonction "Activité" a cassé cette habitude, je revis.”</p>
-                        </div>
-                    </article>
+            <h1 class="section__title">ILS EN PARLENT POUR VOUS</h1>
+            <div class="carousel" id="carousel">
+                <article class="testimonial testimonial--left is-active">
+                    <figure class="testimonial__photo">
+                        <span class="testimonial__halo"></span>
+                        <img src="img/landing_page/4.temoignages/amandine.png" alt="Amandine">
+                    </figure>
+                    <div class="testimonial__card frosted">
+                        <p class="testimonial__name">Amandine, 16 ans</p>
+                        <p class="testimonial__role">Étudiante</p>
+                        <p class="testimonial__quote">« Je passais mes nuits sur TikTok et Snap. Avec les défis de l'appli, je lâche enfin mon tel à 21h30. Je dors trop bien et je revis ! »</p>
+                    </div>
+                </article>
+                <article class="testimonial testimonial--right">
+                    <figure class="testimonial__photo">
+                        <span class="testimonial__halo"></span>
+                        <img src="img/landing_page/4.temoignages/Lucas.png" alt="Lucas">
+                    </figure>
+                    <div class="testimonial__card frosted">
+                        <p class="testimonial__name">Lucas, 24 ans</p>
+                        <p class="testimonial__role">Sans activité</p>
+                        <p class="testimonial__quote">« Je scrollais sur Insta et TikTok toute la journée jusqu'à faire des nuits blanches. L'appli m'a mis un gros stop pour reprendre un rythme sain. »</p>
+                    </div>
+                </article>
+                <article class="testimonial testimonial--top">
+                    <figure class="testimonial__photo">
+                        <span class="testimonial__halo"></span>
+                        <img src="img/landing_page/4.temoignages/Ines.png" alt="Ines">
+                    </figure>
+                    <div class="testimonial__card frosted">
+                        <p class="testimonial__name">Ines, 30 ans</p>
+                        <p class="testimonial__role">Salariée</p>
+                        <p class="testimonial__quote">« Ouvrir Instagram en bossant était un réflexe qui me stressait trop. La fonction "Activité" a cassé cette habitude, je revis. »</p>
+                    </div>
+                </article>
+                <div class="carousel__dots" id="carouselDots">
+                    <button class="carousel__dot is-active" data-index="0" aria-label="Témoignage 1"></button>
+                    <button class="carousel__dot" data-index="1" aria-label="Témoignage 2"></button>
+                    <button class="carousel__dot" data-index="2" aria-label="Témoignage 3"></button>
                 </div>
+            </div>
         </section>
 
         <section id="download">
-            <div id="gauche_download">
-                <div id="text_download">
-                    <p class="text_1_download">HaloMind</p>
-                    <p class="text_2_download">pour un halo de bonheur</p>
-                </div>
-                <p class="text_3_download">Bonne santé et bien-être<br>Sevrage numérique<br>Jeunes et jeunes adultes</p>
-                <div id="images_download">
-                    <img class="images_download_1" src="img/landing_page/5.download/apple.png" alt="apple.png">
-                    <img class="images_download_1" src="img/landing_page/5.download/google.png" alt="google.png">
+            <div class="download__text">
+                <h2 class="download__brand">HaloMind</h2>
+                <p class="download__tagline">éclaire ton esprit</p>
+                <div class="download__buttons">
+                    <a href="#"><img src="img/landing_page/5.download/apple.png" alt="Télécharger dans l'App Store"></a>
+                    <a href="#"><img src="img/landing_page/5.download/google.png" alt="Disponible sur Google Play"></a>
                 </div>
             </div>
-            <div id="droite_download">
-                <img class="image_download_2" src="img/landing_page/5.download/iphone.png" alt="iphone.png">
+            <div class="download__visual">
+                <img class="download__phone" src="img/landing_page/5.download/iphone.png" alt="Application HaloMind">
             </div>
         </section>
 
-        <footer>
-            <p>© 2026 HaloMind. Tous droits réservés.</p>
-            <p>Contact : halomind@contact.fr<br>01 00 00 00 00</p>
-            <img src="  " alt="">
+        <footer class="footer">
+            <p class="footer__copy">© 2026 HaloMind</p>
+            <p class="footer__contact">halomind@contact.fr<br>01 00 00 00 00</p>
+            <div class="footer__socials">
+                <a href="#" aria-label="Instagram"><img src="img/INSTAGRAM.svg" alt="Instagram"></a>
+                <a href="#" aria-label="Snapchat"><img src="img/SNAPCHAT.svg" alt="Snapchat"></a>
+                <a href="#" aria-label="Facebook"><img src="img/FACEBOOK.svg" alt="Facebook"></a>
+            </div>
         </footer>
+
+        <script src="script.js"></script>
     </body>
 </html>
