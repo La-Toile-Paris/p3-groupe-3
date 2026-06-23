@@ -177,6 +177,10 @@ header .text_1_header{
   height: 100vh;
 }
 
+#temoignages h1{
+  font-family: 'Montserrat';
+}
+
 #articles_temoignages{
   display: flex;
   justify-content: center;
@@ -218,4 +222,76 @@ header .text_1_header{
   color: #32325D;
   font-family: 'Montserrat';
   /* font-weight: lighter; */
+}
+
+/* DOWNLOAD */
+
+#download{
+  display: flex;
+  height: 100vh;
+}
+
+#gauche_download{
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  justify-content: center;
+  width: 50%;
+}
+
+#text_download{
+  display: flex;
+  flex-direction: column;
+}
+
+.text_1_download{
+  font-size: 100px;
+  color: #32325D;
+  font-family: 'ABeeZee';
+  margin: 0;
+}
+
+.text_2_download{
+  font-size: 32px;
+  color: #477FFF;
+  font-family: 'Montserrat';
+  padding: 0px;
+  margin: 0;
+}
+
+.text_3_download{
+  font-size: 22px;
+  color: #32325D;
+  font-family: 'Montserrat';
+  padding: 0px;
+}
+
+#droite_download{
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+}
+
+#images_download{
+  display: flex;
+  gap: 60px;
+}
+
+.images_download_1{
+  height: 60px;
+}
+
+.image_download_2{
+  width: 533.33px;
+}
+
+/* FOOTER */
+
+footer{
+  height: 113px;
+  background: #32325D;
+}
+
+footer p{
+  color: white;
 }
