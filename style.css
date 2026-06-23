@@ -1,3 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* DESIGN TOKENS */
+:root {
+  /* Couleurs */
+  --color-dark:    #32325D;
+  --color-blue:    #5F7BF6;
+  --color-violet:  #8DA0F8;
+  --color-purple:  #B97BFC;
+  --color-pink:    #E8A1FD;
+  --color-white:   #ffffff;
+
+  /* Nav */
+  --nav-bg:        rgba(141, 160, 248, 0.55);
+  --nav-border:    rgba(255, 255, 255, 0.35);
+
+  /* Typo */
+  --font-body:     "Montserrat", sans-serif;
+  --font-brand:    "ABeeZee", sans-serif;
+
+  /* Espacements */
+  --space-sm:      16px;
+  --space-md:      24px;
+  --space-lg:      32px;
+
+  /* Divers */
+  --radius-pill:   999px;
+  --blur:          10px;
+}
+
 /* GENERAL */
 
 html {
@@ -10,15 +40,16 @@ body{
   width: 100%;
   display: flex;
   flex-direction: column;
+  font-family: var(--font-body);
 }
 
 header{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #32325D;
-  height: 100px;
-  padding: 32px 32px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  padding: var(--space-md) var(--space-lg);
 }
 
 h1{
@@ -38,31 +69,70 @@ h4{
 /* FOND RADIAL */
 
 .radial {
-  background: 
-      url('../img/Rectangle 4169.png'),
-      radial-gradient(circle, 
-          rgb(232, 161, 253) 6%,   /* #E8A1FD à 100% */
-          rgb(232, 161, 253) 6%,   /* #E8A1FD à 100% */
-          rgb(141, 160, 248) 32%,  /* #8DA0F8 à 100% */
-          rgb(95, 123, 246) 56%,   /* #5F7BF6 à 100% */
-          rgb(81, 109, 232) 71%,   /* #516DE8 à 100% */
-          rgb(60, 60, 150) 87%,    /* #3C3C96 à 100% */
-          rgb(50, 50, 93) 100%     /* #32325D à 100% */
+  background:
+      url('img/Rectangle 4169.png'),
+      radial-gradient(circle,
+          var(--color-pink) 6%,
+          var(--color-violet) 32%,
+          var(--color-blue) 56%,
+          #516DE8 71%,
+          #3C3C96 87%,
+          var(--color-dark) 100%
       );
-  background-blend-mode: multiply; 
+  background-blend-mode: multiply;
   background-size: cover;
   background-position: center;
 }
 
-/* HEADER */
-header a{
-  color: white;
+/* NAVBAR */
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-md);
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 10px var(--space-md);
+  background: var(--nav-bg);
+  border: 1px solid var(--nav-border);
+  border-radius: var(--radius-pill);
+  backdrop-filter: blur(var(--blur));
+}
+
+.navbar__brand{
+  display: flex;
+  align-items: center;
+  gap: 12px;
   text-decoration: none;
 }
 
-header .text_1_header{
+.navbar__brand .circle{
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--color-white);
+  flex-shrink: 0;
+}
+
+.navbar__name{
+  font-family: var(--font-brand);
+  font-size: 24px;
+  color: var(--color-white);
+}
+
+.navbar__links{
   display: flex;
-  gap: 24px;
+  gap: var(--space-md);
+}
+
+.navbar__links a{
+  color: var(--color-white);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar__links a:hover{
+  opacity: 0.8;
 }
 
 /* HERO_HEADER */
@@ -70,152 +140,89 @@ header .text_1_header{
 #hero_header {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
-  padding-bottom: 300px;
+  gap: var(--space-md);
+  padding: 110px var(--space-lg) 40px;
   width: 100%;
   min-height: 100vh;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.hero__stage{
+  position: relative;
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__halo{
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  max-width: 80vw;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--color-white) 0%, rgba(255,255,255,0.7) 40%, rgba(255,255,255,0) 70%);
+  filter: blur(25px);
+  animation: levitate 5s ease-in-out infinite;
+}
+
+.hero__asset{
+  position: relative;
+  height: 55vh;
+  max-height: 520px;
+  width: auto;
+  animation: levitate 5s ease-in-out infinite;
+}
+
+@keyframes levitate{
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-18px); }
 }
 
 .text_1_hero_header{
-  font-size: 20px;
-  font-weight: lighter;
-  font-family: 'Montserrat';
+  margin: 0;
+  font-size: 28px;
+  font-weight: 300;
+  color: var(--color-white);
 }
 
 .text_2_hero_header{
-  font-size: 24px;
-  font-weight: bold;
-  font-family: 'Montserrat';
-  color: white;
+  margin: 0;
+  font-size: 34px;
+  font-weight: 700;
+  color: var(--color-pink);
 }
 
-/* CONTEXTE */
+/* UTILITAIRES PARTAGÉS */
 
-#contexte{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 100vh;
+/* Effet verre dépoli (comme la nav) */
+.frosted{
+  background: var(--nav-bg);
+  border: 1px solid var(--nav-border);
+  backdrop-filter: blur(var(--blur));
 }
 
-.text_1_context{
-  font-size: 20px;
-  font-weight: bold;
-  font-family: 'Montserrat';
-  color: #B97BFC;
+/* Titre de section */
+.section__title{
+  margin: 0;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--color-white);
 }
 
-.text_2_context{
-  font-size: 24px;
-  font-weight: bold;
-  font-family: 'Montserrat';
-  color: #E8A1FD;
+.section__title--left{
+  text-align: left;
 }
 
-.text_3_context{
-  font-size: 20px;
-  font-weight: bold;
-  font-family: 'Montserrat';
-  color: #B97BFC
+/* Halo blanc réutilisable (derrière un visuel) */
+.halo{
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--color-white) 0%, rgba(255,255,255,0.7) 40%, rgba(255,255,255,0) 70%);
+  filter: blur(25px);
+  z-index: 0;
 }
 
-/* FONCTIONNALITE */
-
-#fonctionnalité{
-  display: flex;
-  flex-direction: column;
-}
-
-.img_temoignages{
-  height: 400px;
-}
-
-#fonctionnalite{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 100vh;
-}
-
-.h1_fonctionnalite{
-  justify-content: center;
-  align-items: center;
-  font-family: 'Montserrat';
-}
-
-#activites-bien_etre{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-#interaction{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-#educatif{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-/* TEMOIGNAGES */
-
-#temoignages{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 100vh;
-}
-
-#articles_temoignages{
-  display: flex;
-  justify-content: center;
-  gap: 50px;
-}
-
-.article_temoignages{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 400px;
-  width: 250px;
-  border-radius: 30px;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border: 3px solid rgb(255, 255, 255, 0.3);
-}
-
-.image_temoignages{
-  height: 150px;
-  width: 150px;
-}
-
-.texte_1_temoignages{
-  color: #B97BFC;
-  font-weight:bold;
-  font-family: 'Montserrat';
-}
-
-.texte_2_temoignages{
-  color: #32325D;
-  font-family: 'Montserrat';
-  font-weight:bold;
-}
-
-.texte_3_temoignages{
-  color: #32325D;
-  font-family: 'Montserrat';
-  /* font-weight: lighter; */
-}
