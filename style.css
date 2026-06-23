@@ -48,7 +48,7 @@ header{
   top: 0;
   left: 0;
   right: 0;
-  z-index: 10;
+  z-index: 100;
   padding: var(--space-md) var(--space-lg);
 }
 
@@ -81,7 +81,7 @@ h4{
       );
   background-blend-mode: multiply;
   background-size: cover;
-  background-position: center;
+  background-position: right center;
 }
 
 /* NAVBAR */
