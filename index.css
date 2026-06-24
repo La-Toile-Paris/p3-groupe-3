@@ -5,10 +5,8 @@
 #contexte{
   position: relative;
   background: var(--color-dark);
-  padding: 100px var(--space-lg) 0;
+  padding: 177px var(--space-lg) 0;
   overflow: hidden;
-  /*ANDRES*/
-  padding: 0;
 }
 
 .context__grid{
@@ -22,7 +20,7 @@
 }
 
 .context__visual img{
-  width: 100%;
+  width: 88%;
   height: auto;
   border-radius: 50%;
   display: block;
@@ -180,7 +178,7 @@
 
 #temoignages{
   text-align: center;
-  padding: 80px var(--space-lg);
+  padding: 176px var(--space-lg);
 }
 
 .carousel{
@@ -308,7 +306,7 @@
   justify-content: space-between;
   gap: 40px;
   min-height: 80vh;
-  padding: 80px var(--space-lg);
+  padding: 39px var(--space-lg);
   background: var(--color-white);
 }
 
