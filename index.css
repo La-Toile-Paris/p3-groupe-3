@@ -81,6 +81,7 @@
 }
 
 .features-tagline{
+  font-family: 'ABeeZee', sans-serif;
   text-align: center;
   font-size: 30px;
   font-weight: 700;
@@ -142,6 +143,7 @@
 }
 
 .feature__title{
+  color: #E8A1FD;
   font-size: 28px;
   font-weight: 700;
   margin: 0 0 28px;

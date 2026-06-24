@@ -206,6 +206,7 @@ h4{
 
 /* Titre de section */
 .section__title{
+  font-family: 'ABeeZee';
   margin: 0;
   font-size: 32px;
   font-weight: 700;
