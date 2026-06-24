@@ -92,7 +92,8 @@ body{
   margin: 0;
   font-size: 22px;
   line-height: 1.5;
-  text-transform: capitalize;
+  /* Andres */
+  /* text-transform: capitalize; */
 }
 
 /* ============ STATISTIQUES ============ */
@@ -114,9 +115,11 @@ body{
   position: sticky;
   top: 170px; /* dégage la nav fixe */
   padding-top: 300px; /* espace généreux pour les halos au-dessus du texte */
-  padding-bottom: 200px; /* évite que le contenu soit coupé */
   color: var(--color-white);
   z-index: 1;
+  /* ANDRES : ca crée un espace de trop dans "doc.html" pour chaque <div> de "stats-grid" */
+  /* padding-bottom: 200px;  */
+  /* évite que le contenu soit coupé */
 }
 
 /* décalage vertical façon magazine */
@@ -259,15 +262,16 @@ body{
 .persona__img{
   position: relative;
   z-index: 2;
-  height: 560px;
   width: auto;
   display: block;
+  /*ANDRES*/
+  height: 500px;
 }
 
 .persona__badge{
   position: absolute;
   z-index: 1;
-  bottom: -90px;
+  bottom: -130px;
   left: 50%;
   transform: translateX(-50%);
   width: 300px;
@@ -318,7 +322,7 @@ body{
   margin: 0 0 10px;
   font-size: 24px;
   font-weight: 700;
-  color: #E8A1FD;
+  color: #32325D;
 }
 
 .persona-card p{
