@@ -108,7 +108,9 @@ body{
   gap: 100px;
   max-width: 1200px;
   margin: 0 auto;
-  align-items: start; /* requis pour que sticky fonctionne */
+  /* align-items: start; requis pour que sticky fonctionne */
+  /* ANDRES */
+  align-items: flex-start;
 }
 
 .stat-col{
@@ -145,7 +147,7 @@ body{
 }
 
 .stat-col__text{
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 300;
   line-height: 1.4;
   margin: 0 0 16px;
@@ -176,6 +178,15 @@ body{
 .stat-col__src{
   font-size: 15px;
   font-weight: 300;
+}
+
+/* ANDRES */
+.padding_titre1{
+  padding-bottom: 62px;
+}
+
+.padding_titre2{
+  padding-bottom: 16px;
 }
 
 /* ============ SOLUTION (blocs blancs) ============ */
@@ -218,7 +229,7 @@ body{
 /* ============ PERSONA ============ */
 
 #doc_persona{
-  padding: 80px var(--space-lg) 120px;
+  padding: 17px var(--space-lg) 120px;
 }
 
 .doc-persona__title{
@@ -257,6 +268,7 @@ body{
 .persona__figure{
   position: relative;
   display: inline-block;
+  bottom: -2px;
 }
 
 .persona__img{
@@ -265,13 +277,14 @@ body{
   width: auto;
   display: block;
   /*ANDRES*/
-  height: 500px;
+  height: 400px;
+  bottom: 74px;
 }
 
 .persona__badge{
   position: absolute;
   z-index: 1;
-  bottom: -130px;
+  bottom: -55px;
   left: 50%;
   transform: translateX(-50%);
   width: 300px;
@@ -455,17 +468,17 @@ body{
 
 .card:nth-child(1){
   align-self: flex-end;
-  margin-right: 15%;
+  margin-left: 15%;
 }
 
 .card:nth-child(2){
-  align-self: flex-start;
-  margin-left: 8%;
+  align-self: flex-end;
+  margin-right: 15%;
 }
 
 .card:nth-child(3){
   align-self: flex-start;
-  margin-left: 33%;
+  margin-left: 15%;
 }
 
 .card:nth-child(4){
@@ -500,6 +513,69 @@ body{
   line-height: 1.5;
   font-weight: 400;
   color: var(--color-dark);
+}
+
+/* EQUIPE */
+
+#equipe{
+  background: #32325D;
+  height: 100vh;
+}
+
+#equipe article{
+  width: 300px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-around;
+}
+
+#equipe article img{
+  height: 150px;
+}
+
+.equipe-card-reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+.equipe-card-reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.equipe-card {
+  border-radius: 24px;
+  padding: 24px 32px;
+  color: var(--color-white);
+}
+
+.equipe-card-frosted {
+  background: var(--nav-bg);
+  border: 1px solid var(--nav-border);
+  backdrop-filter: blur(var(--blur));
+}
+
+.zone_1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  gap: 20px;
+}
+
+.zone_2_1{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.zone_2_2{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
 /* ============ FOOTER ============ */
