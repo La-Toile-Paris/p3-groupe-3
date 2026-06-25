@@ -468,17 +468,17 @@ body{
 
 .card:nth-child(1){
   align-self: flex-end;
-  margin-right: 15%;
+  margin-left: 15%;
 }
 
 .card:nth-child(2){
-  align-self: flex-start;
-  margin-left: 8%;
+  align-self: flex-end;
+  margin-right: 15%;
 }
 
 .card:nth-child(3){
   align-self: flex-start;
-  margin-left: 8%;
+  margin-left: 15%;
 }
 
 .card:nth-child(4){

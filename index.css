@@ -5,7 +5,7 @@
 #contexte{
   position: relative;
   background: var(--color-dark);
-  padding: 177px var(--space-lg) 0;
+  padding: 180px var(--space-lg) 0;
   overflow: hidden;
 }
 
@@ -99,7 +99,7 @@
   justify-content: center;
   gap: 20px;
   min-height: 100vh;
-  padding: 80px var(--space-lg);
+  padding: 10px var(--space-lg);
   overflow: hidden;
 }
 
@@ -178,7 +178,7 @@
 
 #temoignages{
   text-align: center;
-  padding: 176px var(--space-lg);
+  padding: 185px var(--space-lg);
 }
 
 .carousel{
